@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            scroll-behavior: smooth;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        header {
+            background-color: black;
+            color: white;
+            height: 80px;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        header div {
+            /* border: 1px solid red; */
+            /* width: 40%; */
+            display: inline-block;
+            /* margin-bottom: 30px; */
+        }
+
+        .navigation {
+            width: 50%;
+        }
+
+        header ul li {
+            list-style: none;
+            display: inline;
+            margin: 0px 10px;
+            padding: 20px 0px;
+            /* float: left; */
+        }
+
+        header li a {
+            color: white;
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .navigation {
+            margin-left: 200px;
+        }
+
+        .scrolltoTop {
+            height: 30px;
+            width: 30px;
+            background-color: rgb(179, 46, 46);
+            border-radius: 100%;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .about .col {
+            width: 48%;
+            display: inline-block;
+        }
+
+        .about .cta-right {
+            position: relative;
+            /* border: 1px solid red; */
+        }
+
+        .about .cta-right div img {
+            height: 400px;
+            width: 100%;
+            position: relative;
+        }
+
+        .about .cta-right>img {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            z-index: 1;
+            transform: translate(50%, -50%);
+        }
+
+        .cta-left {
+            padding: 20px;
+        }
+
+        .cta-left h2 {
+            margin: 20px 0;
+            font-size: 40px;
+        }
+
+        .cta-left p {
+            font-size: 22px;
+            margin: 20px 0;
+            line-height: 50px;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px;
+        }
+        /* Service secrtion */
+        .services{
+            text-align: center;
+            background-color: aqua;
+            color: black;
+            padding: 100px;
+        }
+        .services h2{
+            font-size: 42px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        /* Blogs Section */
+        .blogs{
+            text-align: center;
+            background-color: rgb(255, 242, 0);
+            color: black;
+            padding: 100px;
+        }
+        .blogs h2{
+            font-size: 42px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        /* Contact Section */
+        .contacts{
+            text-align: center;
+            background-color: rgb(183, 0, 255);
+            color: black;
+            padding: 100px;
+        }
+        .contacts h2{
+            font-size: 42px;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand-logo">
+            <img height="60" src="https://www.pngall.com/wp-content/uploads/10/Fantom-Crypto-Logo-PNG-Photo.png" alt="">
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="cta-left">
+                        <h2>Fantom Blockchain</h2>
+                        <p>Fantom is a smart contract-supporting blockchain, powered by its native FTM token. Following
+                            a
+                            $40 million raise, Fantom launched its mainnet in December 2019. Its blockchain is fast and
+                            cheap, and in 2021 proved that it could support its own decentralized finance (DeFi)
+                            industry.
+                        </p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+                <div class="col cta-right">
+                    <img src="https://lh3.googleusercontent.com/kl9wBa8oNMqKfn_mkvqOrc_cjM09whrjF5J7iJZ522wVgvtNYOwN5rbUImMKxwHQOOyLQ20OIjfFCkVcAKSA8vIuwJ3jRxjpkuXBAw=w600"
+                        alt="">
+                    <div>
+                        <img src="https://miro.medium.com/max/1400/1*5Uv9EJOj2Bx_fJT6SjR4MQ.gif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="services" id="services">
+        <h2>services</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit, vel, cum iure illum, inventore
+            voluptatibus corrupti perspiciatis odit aspernatur sequi ipsum! Possimus facere repellendus, dolorum enim
+            sed optio officia dolor quaerat natus. Temporibus ea quia provident magni, nemo sint amet obcaecati eaque
+            aperiam deserunt ducimus atque et nulla minima, qui repellendus autem vitae est, illo accusantium deleniti
+            exercitationem nam. Quas ratione fugit reprehenderit odit, aliquam eligendi ipsam ex quae, porro delectus
+            numquam magnam. Quos quaerat officia iure alias aut maxime omnis? Perspiciatis quia in quibusdam totam odio
+            nesciunt modi obcaecati ratione, consequatur voluptas quidem repellat dolor placeat nemo laborum assumenda,
+            reiciendis optio impedit? Quia itaque dignissimos sint, facilis at libero consequatur vel assumenda, dolor
+            necessitatibus tenetur magni soluta? Ipsum qui veniam vel corporis voluptatibus at eaque architecto sequi
+            quia saepe, temporibus libero aspernatur, ratione dolore voluptates expedita tenetur eligendi, veritatis
+            omnis iure maiores reprehenderit. Voluptatum ipsum voluptas obcaecati facere, quidem sunt harum nesciunt rem
+            quia, debitis, minus natus fugit aliquid consectetur! Quas itaque nulla, inventore, nemo nam voluptas aut
+            assumenda quos voluptatibus cupiditate blanditiis ipsa incidunt non error! Ullam eos eaque aspernatur rem
+            distinctio commodi sequi vero earum! Ducimus sit et enim cum dignissimos rerum officiis esse perspiciatis
+            suscipit itaque? Ipsa vel in dolorem facilis rerum nihil impedit voluptas qui tenetur, debitis excepturi
+            fuga quam dolor repellat totam nemo eligendi, aspernatur, repudiandae pariatur iste explicabo natus
+            obcaecati? Voluptatibus, minus. Iusto pariatur, nobis consectetur quod distinctio odio assumenda dolorem
+            adipisci natus ad reprehenderit dolore dolor officia alias. Incidunt sed fugiat dolorem delectus, architecto
+            quasi aliquid aperiam expedita voluptate iusto recusandae quaerat. Suscipit quasi fuga quaerat beatae
+            commodi sint sequi explicabo doloremque earum eaque? Culpa, est quisquam. Eos eveniet odio quisquam id
+            tempora voluptas omnis. Blanditiis perspiciatis dolores soluta aut, magnam praesentium porro excepturi in
+            provident alias, totam debitis saepe minima.</p>
+            <button>See details</button>
+    </section>
+    <section class="blogs" id="blogs">
+        <h2>Our Blogs</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit, vel, cum iure illum, inventore
+            voluptatibus corrupti perspiciatis odit aspernatur sequi ipsum! Possimus facere repellendus, dolorum enim
+            sed optio officia dolor quaerat natus. Temporibus ea quia provident magni, nemo sint amet obcaecati eaque
+            aperiam deserunt ducimus atque et nulla minima, qui repellendus autem vitae est, illo accusantium deleniti
+            exercitationem nam. Quas ratione fugit reprehenderit odit, aliquam eligendi ipsam ex quae, porro delectus
+            numquam magnam. Quos quaerat officia iure alias aut maxime omnis? Perspiciatis quia in quibusdam totam odio
+            nesciunt modi obcaecati ratione, consequatur voluptas quidem repellat dolor placeat nemo laborum assumenda,
+            reiciendis optio impedit? Quia itaque dignissimos sint, facilis at libero consequatur vel assumenda, dolor
+            necessitatibus tenetur magni soluta? Ipsum qui veniam vel corporis voluptatibus at eaque architecto sequi
+            quia saepe, temporibus libero aspernatur, ratione dolore voluptates expedita tenetur eligendi, veritatis
+            omnis iure maiores reprehenderit. Voluptatum ipsum voluptas obcaecati facere, quidem sunt harum nesciunt rem
+            quia, debitis, minus natus fugit aliquid consectetur! Quas itaque nulla, inventore, nemo nam voluptas aut
+            assumenda quos voluptatibus cupiditate blanditiis ipsa incidunt non error! Ullam eos eaque aspernatur rem
+            distinctio commodi sequi vero earum! Ducimus sit et enim cum dignissimos rerum officiis esse perspiciatis
+            suscipit itaque? Ipsa vel in dolorem facilis rerum nihil impedit voluptas qui tenetur, debitis excepturi
+            fuga quam dolor repellat totam nemo eligendi, aspernatur, repudiandae pariatur iste explicabo natus
+            obcaecati? Voluptatibus, minus. Iusto pariatur, nobis consectetur quod distinctio odio assumenda dolorem
+            adipisci natus ad reprehenderit dolore dolor officia alias. Incidunt sed fugiat dolorem delectus, architecto
+            quasi aliquid aperiam expedita voluptate iusto recusandae quaerat. Suscipit quasi fuga quaerat beatae
+            commodi sint sequi explicabo doloremque earum eaque? Culpa, est quisquam. Eos eveniet odio quisquam id
+            tempora voluptas omnis. Blanditiis perspiciatis dolores soluta aut, magnam praesentium porro excepturi in
+            provident alias, totam debitis saepe minima.</p>
+            <button>See All Blogs</button>
+    </section>
+    <section class="contacts" id="contact">
+        <h2>Our Contact Details</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit, vel, cum iure illum, inventore
+            voluptatibus corrupti perspiciatis odit aspernatur sequi ipsum! Possimus facere repellendus, dolorum enim
+            sed optio officia dolor quaerat natus. Temporibus ea quia provident magni, nemo sint amet obcaecati eaque
+            aperiam deserunt ducimus atque et nulla minima, qui repellendus autem vitae est, illo accusantium deleniti
+            exercitationem nam. Quas ratione fugit reprehenderit odit, aliquam eligendi ipsam ex quae, porro delectus
+            numquam magnam. Quos quaerat officia iure alias aut maxime omnis? Perspiciatis quia in quibusdam totam odio
+            nesciunt modi obcaecati ratione, consequatur voluptas quidem repellat dolor placeat nemo laborum assumenda,
+            reiciendis optio impedit? Quia itaque dignissimos sint, facilis at libero consequatur vel assumenda, dolor
+            necessitatibus tenetur magni soluta? Ipsum qui veniam vel corporis voluptatibus at eaque architecto sequi
+            quia saepe, temporibus libero aspernatur, ratione dolore voluptates expedita tenetur eligendi, veritatis
+            omnis iure maiores reprehenderit. Voluptatum ipsum voluptas obcaecati facere, quidem sunt harum nesciunt rem
+            quia, debitis, minus natus fugit aliquid consectetur! Quas itaque nulla, inventore, nemo nam voluptas aut
+            assumenda quos voluptatibus cupiditate blanditiis ipsa incidunt non error! Ullam eos eaque aspernatur rem
+            distinctio commodi sequi vero earum! Ducimus sit et enim cum dignissimos rerum officiis esse perspiciatis
+            suscipit itaque? Ipsa vel in dolorem facilis rerum nihil impedit voluptas qui tenetur, debitis excepturi
+            fuga quam dolor repellat totam nemo eligendi, aspernatur, repudiandae pariatur iste explicabo natus
+            obcaecati? Voluptatibus, minus. Iusto pariatur, nobis consectetur quod distinctio odio assumenda dolorem
+            adipisci natus ad reprehenderit dolore dolor officia alias. Incidunt sed fugiat dolorem delectus, architecto
+            quasi aliquid aperiam expedita voluptate iusto recusandae quaerat. Suscipit quasi fuga quaerat beatae
+            commodi sint sequi explicabo doloremque earum eaque? Culpa, est quisquam. Eos eveniet odio quisquam id
+            tempora voluptas omnis. Blanditiis perspiciatis dolores soluta aut, magnam praesentium porro excepturi in
+            provident alias, totam debitis saepe minima.</p>
+            <button>Contact Me</button>
+    </section>
+    <footer>
+        <div class="scrolltoTop"></div>
+    </footer>
+</body>
+
+</html>
